@@ -13,6 +13,8 @@ class ExampleTest extends TestCase
      */
     public function test_example()
     {
+      echo env('DB_HOST', 'Laravel');
+      print_r($_ENV);
         $this->assertTrue(true);
     }
 }
